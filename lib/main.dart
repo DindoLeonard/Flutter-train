@@ -1,42 +1,20 @@
 import 'package:flutter/material.dart';
+import './introduction-widgets/button.dart';
+import './introduction-widgets/stateful_widget.dart';
 
-// void main() {
-//   runApp(
-//     const MaterialApp(
-//       title: 'Button',
-//       home: Scaffold(
-//         body: Center(
-//           child: MyButton(),
-//         ),
-//       ),
-//     ),
-//   );
-// }
+void main() {
+  runApp(
+    const MaterialApp(
+      title: 'Material App',
+      home: Scaffold(
+        body: Center(
+          child: Counter(),
+        ),
+      ),
+    ),
+  );
+}
 
-// class MyButton extends StatelessWidget {
-//   const MyButton({Key? key}) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return GestureDetector(
-//       onTap: () {
-//         print('My Button was tapped');
-//       },
-//       child: Container(
-//         height: 50,
-//         padding: const EdgeInsets.all(8.0),
-//         margin: const EdgeInsets.symmetric(horizontal: 8),
-//         decoration: BoxDecoration(
-//           borderRadius: BorderRadius.circular(5.0),
-//           color: Colors.lightGreen[500],
-//         ),
-//         child: const Center(
-//           child: Text('Engage'),
-//         ),
-//       ),
-//     );
-//   }
-// }
 
 
 
