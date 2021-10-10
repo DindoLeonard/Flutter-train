@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
-import './introduction-widgets/button.dart';
-import './introduction-widgets/stateful_widget.dart';
+import 'package:myapp/introduction-widgets/shopping_list.dart';
+// import './introduction-widgets/button.dart';
+// import './introduction-widgets/stateful_widget.dart';
+// import './introduction-widgets//stateful_widget1.dart';
+// import './introduction-widgets//my_own/';
 
 void main() {
   runApp(
     const MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        body: Center(
-          child: Counter(),
-        ),
+      title: 'Shopping App',
+      home: ShoppingList(
+        products: [
+          Product(name: 'Eggs'),
+          Product(name: 'Flour'),
+          Product(name: 'Chocolate chips'),
+        ],
       ),
     ),
   );
